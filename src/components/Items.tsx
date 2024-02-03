@@ -1,4 +1,6 @@
-import { FlexCenter } from "@/styles/globals";
+import { FlexCenter } from '@/styles/globals';
+import CustomCarousel from './Carousel';
+import { ItemProps } from '@/interfaces';
 
 interface ItemsProps {
   label: string;
@@ -6,21 +8,19 @@ interface ItemsProps {
   contents: string[];
 }
 
-const Items = ({label, title, contents}: ItemsProps) => {
-
+const Items = ({ label, title, contents }: ItemsProps) => {
   return (
-    <FlexCenter>
-      <h1>{label}</h1>
-      <p>{title}</p>
-      {
-        contents.map((content, idx) => (
-          <div key={idx}>
-            {content}
-          </div>
-        ))
-      }
+    <FlexCenter className="flex-col">
+      <h1 className="text-2xl font-semibold">{label}</h1>
+      <p className="text-gray-500">{title}</p>
+      <div>
+        {contents.map((content, idx) => (
+          <div key={idx}>{content}</div>
+          // <CustomCarousel key={idx} items={content} />
+        ))}
+      </div>
     </FlexCenter>
-  )
-}
+  );
+};
 
 export default Items;
