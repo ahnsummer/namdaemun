@@ -38,7 +38,7 @@ export const bestRiceCakes: ItemProps[] = [
   },
   {
     image: '/images/main/ricecake_3.jpeg',
-    title: 'three',
+    title: '흑임자 인절미',
     content: '남대문떡집 흑임자인절미 (대,중,소 사이즈 택 1)',
     link: 'three',
     price: 23000,

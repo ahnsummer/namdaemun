@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <FlexCenter className="flex-col overflow-auto">
       <CustomCarousel className="w-full" items={banners} />
-      <div className="container my-8">
+      <div className="narrow-container my-8">
         <Title
           label="BEST ITEMS"
           content="남대문떡집의 인기 상품을 확인해보세요"

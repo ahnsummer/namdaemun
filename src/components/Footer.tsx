@@ -3,7 +3,7 @@ import { FlexCenter } from '@/styles/globals';
 const Footer = () => {
   return (
     <FlexCenter className="bg-slate-100 text-slate-600 font-xs">
-      <div className="container py-8">
+      <div className="narrow-container py-8">
         <p>상호 : 남대문떡집 대표 : 안기용 사업자 등록번호 : 231-87-02433</p>
         <p>
           주소 : 07284 서울 영등포구 선유서로 17 문래동 빅토리테크노 타워 1층{' '}

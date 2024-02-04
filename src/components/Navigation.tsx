@@ -21,10 +21,8 @@ const Navigation = () => {
 
   return (
     <FlexBetween className="flex-col text-sm border-b">
-      <FlexBetween className="container py-4">
+      <FlexBetween className="narrow-container py-4">
         <FlexBetween className="w-1/3">
-          <Button>로그인</Button>
-          <Button>회원가입</Button>
           <TextField hiddenLabel className="w-80" size="small" />
         </FlexBetween>
         <FlexCenter className="w-1/3">
@@ -39,10 +37,12 @@ const Navigation = () => {
           </Link>
         </FlexCenter>
         <FlexBetween className="w-1/3">
+          <Button>로그인</Button>
+          <Button>회원가입</Button>
           <Link className="flex" href={`tel:757-0095`}>
             <Image
               src="/images/telephone.png"
-              className="mr-2"
+              className="mr-1"
               width={20}
               height={20}
               alt="telephone"
@@ -62,7 +62,7 @@ const Navigation = () => {
         </FlexBetween>
       </FlexBetween>
       <div className="w-full border-t" />
-      <FlexBetween className="container py-4 font-semibold">
+      <FlexBetween className="narrow-container py-4 font-semibold">
         {categories.map((category) => (
           <Link key={category} href={`/${category}`}>
             {category}
