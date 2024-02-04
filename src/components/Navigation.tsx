@@ -20,7 +20,7 @@ const Navigation = () => {
   }, []);
 
   return (
-    <FlexBetween className="flex-col text-sm">
+    <FlexBetween className="flex-col text-sm border-b">
       <FlexBetween className="container py-4">
         <FlexBetween className="w-1/3">
           <Button>로그인</Button>
