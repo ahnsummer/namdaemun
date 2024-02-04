@@ -1,9 +1,10 @@
-import { FlexBetween, FlexCenter } from '@/styles/globals';
+import { useEffect, useState } from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
 import { Button } from '@mui/base';
 import { TextField } from '@mui/material';
-import Image from 'next/image';
-import Link from 'next/link';
-import { useEffect, useState } from 'react';
+
+import { FlexBetween, FlexCenter } from '@/styles/globals';
 
 const Navigation = () => {
   const [categories, setCategories] = useState<string[]>([]);

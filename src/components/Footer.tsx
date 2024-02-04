@@ -1,4 +1,4 @@
-import { FlexBetween, FlexCenter } from '@/styles/globals';
+import { FlexCenter } from '@/styles/globals';
 
 const Footer = () => {
   return (

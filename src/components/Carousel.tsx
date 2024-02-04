@@ -1,8 +1,9 @@
-import { CarouselProps } from '@/interfaces';
-import { Paper } from '@mui/material';
-import classNames from 'classnames';
 import Image from 'next/image';
+import classNames from 'classnames';
+import { Paper } from '@mui/material';
 import Carousel from 'react-material-ui-carousel';
+
+import { CarouselProps } from '@/interfaces';
 
 const CustomCarousel = ({ items, className }: CarouselProps) => {
   return (
