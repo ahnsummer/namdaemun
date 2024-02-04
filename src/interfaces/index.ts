@@ -3,6 +3,7 @@ export type ItemProps = {
   title: string;
   content: string;
   link: string;
+  price?: number;
 };
 
 export type CarouselProps = {
