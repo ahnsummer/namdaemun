@@ -24,7 +24,7 @@ const Navigation = () => {
         <FlexBetween className="w-1/3">
           <Button>로그인</Button>
           <Button>회원가입</Button>
-          <TextField label="search" className="w-80" />
+          <TextField hiddenLabel className="w-80" size="small" />
         </FlexBetween>
         <FlexCenter className="w-1/3">
           <Link href={'/'}>
@@ -41,7 +41,7 @@ const Navigation = () => {
           <Link className="flex" href={`tel:757-0095`}>
             <Image
               src="/images/telephone.png"
-              className='mr-2'
+              className="mr-2"
               width={20}
               height={20}
               alt="telephone"
@@ -60,7 +60,7 @@ const Navigation = () => {
           <Link href={'/'}>Q&A</Link>
         </FlexBetween>
       </FlexBetween>
-      <div className='w-full border-t' />
+      <div className="w-full border-t" />
       <FlexBetween className="container py-4 font-semibold">
         {categories.map((category) => (
           <Link key={category} href={`/${category}`}>

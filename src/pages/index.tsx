@@ -1,7 +1,4 @@
-// import Image from 'next/image';
-// import { Inter } from 'next/font/google';
 import Navigation from '@/components/Navigation';
-// import Items from '@/components/Items';
 import { useState } from 'react';
 import { FlexCenter } from '@/styles/globals';
 import CustomCarousel from '@/components/Carousel';
@@ -33,7 +30,6 @@ export default function Home() {
   const [list, setList] = useState<string[]>(['1', '2', '3', '4', '5', '6']);
 
   return (
-    // <main className="w-full ">
     <FlexCenter className="flex-col">
       <Navigation />
       <CustomCarousel className="w-full" items={items} />
@@ -45,6 +41,5 @@ export default function Home() {
         />
       </div>
     </FlexCenter>
-    // </main>
   );
 }
